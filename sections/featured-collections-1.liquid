@@ -1,15 +1,55 @@
 <!-- featured-collections-1.liquid -->
 <style>
   
+  .customstyle{{ section.id }} .collection-card-1 {
+    text-align: {{ section.settings.align_text | default: 'center' }} !important;
+  }
   .customstyle{{ section.id }} .collection-card__image{
     border-radius:{{ section.settings.radius }}%;
     isolation: isolate;
     width: {{ section.settings.circle_size_desktop | default: 200 }}px;
     height: {{ section.settings.circle_size_desktop | default: 200 }}px;
-    margin: 0 auto;
+    {%- if section.settings.align_text == 'left' -%}
+      margin: 0 !important;
+    {%- elsif section.settings.align_text == 'right' -%}
+      margin: 0 0 0 auto !important;
+    {%- else -%}
+      margin: 0 auto !important;
+    {%- endif -%}
+    border: {{ section.settings.border_width | default: 0 }}px solid {{ section.settings.border_color | default: 'transparent' }} !important;
+    {%- assign gap_color = section.settings.bgsection | default: 'var(--color-body)' -%}
+    {%- if gap_color == 'rgba(0,0,0,0)' or gap_color == 'transparent' or gap_color == blank -%}
+      {%- assign gap_color = 'var(--color-body)' -%}
+    {%- endif -%}
+    background-color: {{ gap_color }} !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease;
+  }
+  .customstyle{{ section.id }} .collection-card-1:hover .collection-card__image{
+    border-color: {{ section.settings.border_color_hover | default: 'transparent' }} !important;
+  }
+  {%- assign gap = section.settings.border_gap | default: 4 -%}
+  {%- assign gap_double = gap | times: 2 -%}
+  .customstyle{{ section.id }} .collection-card__image img {
+    top: {{ gap }}px !important;
+    left: {{ gap }}px !important;
+    width: calc(100% - {{ gap_double }}px) !important;
+    height: calc(100% - {{ gap_double }}px) !important;
+    border-radius: {{ section.settings.radius }}% !important;
+  }
+  .customstyle{{ section.id }} .collection-card__image a {
+    border-radius: {{ section.settings.radius }}% !important;
   }
   .customstyle{{ section.id }} .collection-card-1-infor h4 {
     font-size: {{ section.settings.text_size_desktop | default: 16 }}px !important;
+  }
+  .customstyle{{ section.id }} .collection-card-1-infor h4 a {
+    color: {{ section.settings.text_color | default: '#000000' }} !important;
+    transition: color 0.3s ease;
+  }
+  .customstyle{{ section.id }} .collection-card-1:hover .collection-card-1-infor h4 a,
+  .customstyle{{ section.id }} .collection-card-1-infor h4 a:hover {
+    color: {{ section.settings.text_color_hover | default: '#7F0019' }} !important;
   }
   @media (max-width: 749px) {
     .customstyle{{ section.id }} .collection-card__image{
@@ -493,6 +533,70 @@
       "unit": "px",
       "label": "Font Size (Mobile)",
       "default": 14
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Border Width",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "border_gap",
+      "min": 0,
+      "max": 15,
+      "step": 1,
+      "unit": "px",
+      "label": "Border Gap (Distance from circle)",
+      "default": 4
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "border_color_hover",
+      "label": "Border Hover Color",
+      "default": "#7F0019"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color_hover",
+      "label": "Text Hover Color",
+      "default": "#7F0019"
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "Text Alignment",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
     },
     {
       "type": "range",
