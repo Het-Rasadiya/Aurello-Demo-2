@@ -4,6 +4,15 @@
   .customstyle{{ section.id }} .collection-card__image{
     border-radius:{{ section.settings.radius }}%;
     isolation: isolate;
+    width: {{ section.settings.circle_size_desktop | default: 200 }}px;
+    height: {{ section.settings.circle_size_desktop | default: 200 }}px;
+    margin: 0 auto;
+  }
+  @media (max-width: 749px) {
+    .customstyle{{ section.id }} .collection-card__image{
+      width: {{ section.settings.circle_size_mobile | default: 120 }}px;
+      height: {{ section.settings.circle_size_mobile | default: 120 }}px;
+    }
   }
   .customstyle{{ section.id }} .slick-dots{
     margin-top: 30px;
@@ -109,7 +118,8 @@
             data-draggable="{{ section.settings.draggable }}" 
             data-infinite="{{ section.settings.infinite }}" 
             data-section-id="{{ section.id }}" 
-            data-slidestoshow-mobile="1"
+            data-slidestoshow-mobile="{{ section.settings.show_mobile | default: 3 }}"
+            data-slidestoscroll-mobile="{{ section.settings.scroll_mobile | default: 1 }}"
             {% if section.settings.enable_carousel %}
             data-section-type="slickCarousels"
             {% endif %}
@@ -408,6 +418,44 @@
       "unit": "%",
       "label": "Border Radius",
       "default": 0
+    },
+    {
+      "type": "range",
+      "id": "circle_size_desktop",
+      "min": 100,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Circle Size (Desktop)",
+      "default": 200
+    },
+    {
+      "type": "range",
+      "id": "circle_size_mobile",
+      "min": 60,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Circle Size (Mobile)",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "show_mobile",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Display items (Mobile)",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "scroll_mobile",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Scroll items (Mobile)",
+      "default": 1
     },
     {
       "type": "range",

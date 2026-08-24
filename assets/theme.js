@@ -2921,6 +2921,7 @@ theme.slickCarousel = (function (){
       draggable 		: this.$container.data('draggable') || false,
       accessibility 	: this.$container.data('accessibility') || false,
       slidesToShowMobile 		: this.$container.data('slidestoshow-mobile') || 1,
+      slidesToScrollMobile 		: this.$container.data('slidestoscroll-mobile') || this.$container.data('slidestoshow-mobile') || 1,
     }
     this.settings.slidesToShow1200 		= (this.settings.slidesToShow - 1) > 1? (this.settings.slidesToShow - 1) : 1;
     this.settings.slidesToShow992  		= (this.settings.slidesToShow - 2) > 1? (this.settings.slidesToShow - 2) : 1;
@@ -2968,7 +2969,7 @@ theme.slickCarousel = (function (){
           breakpoint: 480,
           settings: {
             slidesToShow: this.settings.slidesToShowMobile,
-            slidesToScroll: this.settings.slidesToShowMobile
+            slidesToScroll: this.settings.slidesToScrollMobile
           }
         }
       ]
