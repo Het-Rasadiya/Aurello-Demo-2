@@ -1,0 +1,315 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "430d67f1-2a0b-4500-81eb-2bd7276f92ad": {
+      "type": "featured-collections-1",
+      "blocks": {
+        "0b74bde9-fb76-4d98-aaae-fc807e6f171f": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "image": "shopify://shop_images/men.jpg",
+            "icon": ""
+          }
+        },
+        "13aba3f0-7305-4cc6-959e-23f07d16c852": {
+          "type": "collection",
+          "settings": {
+            "collection": "women",
+            "image": "shopify://shop_images/women.jpg",
+            "icon": ""
+          }
+        },
+        "template--19803510538560__430d67f1-2a0b-4500-81eb-2bd7276f92ad-1688610004822568a8-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "jewellery",
+            "image": "shopify://shop_images/accessories.jpg",
+            "icon": ""
+          }
+        },
+        "template--19803510538560__430d67f1-2a0b-4500-81eb-2bd7276f92ad-1688610004822568a8-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "outerwear",
+            "image": "shopify://shop_images/outerwear.jpg",
+            "icon": ""
+          }
+        },
+        "da799991-c205-4b0b-b14c-7454b5dd99cd": {
+          "type": "collection",
+          "settings": {
+            "collection": "shoes",
+            "image": "shopify://shop_images/shoes.jpg",
+            "icon": ""
+          }
+        },
+        "template--19803510538560__430d67f1-2a0b-4500-81eb-2bd7276f92ad-1688610004822568a8-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "glasses",
+            "image": "shopify://shop_images/glasses.jpg",
+            "icon": ""
+          }
+        }
+      },
+      "block_order": [
+        "0b74bde9-fb76-4d98-aaae-fc807e6f171f",
+        "13aba3f0-7305-4cc6-959e-23f07d16c852",
+        "template--19803510538560__430d67f1-2a0b-4500-81eb-2bd7276f92ad-1688610004822568a8-2",
+        "template--19803510538560__430d67f1-2a0b-4500-81eb-2bd7276f92ad-1688610004822568a8-0",
+        "da799991-c205-4b0b-b14c-7454b5dd99cd",
+        "template--19803510538560__430d67f1-2a0b-4500-81eb-2bd7276f92ad-1688610004822568a8-1"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "",
+        "title": "Browse Our Selections",
+        "des": "Join the ranks of our satisfied customers and elevate your wardrobe with the best of the best. Dive into our best sellers, where style meets satisfaction, and discover the allure of fashion at its peak.",
+        "align-heading": "left",
+        "size_image": "square",
+        "style_item": "top",
+        "rows": "1",
+        "show": 5,
+        "radius": 50,
+        "space": 15,
+        "size_text": "h4",
+        "show_count": false,
+        "button_text": "",
+        "enable_carousel": true,
+        "arrows": false,
+        "draggable": true,
+        "dots": false,
+        "infinite": true,
+        "paddingsection": "80px 0px 30px 0px",
+        "paddingmobile": "0px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "07954675-bad5-4a16-8ffa-2392279b713d": {
+      "type": "featured-products",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "Sub Title Top",
+        "title": "Best Selling",
+        "des": "Explore the epitome of style with our 'Best Selling Products.' Uncover the fashion favorites that have captured the hearts of our discerning customers.",
+        "align-heading": "left",
+        "collection": "bags",
+        "enable_creative": false,
+        "padding": true,
+        "colgrid": "col-lg-3",
+        "rows": 8,
+        "txtbutton": "show all",
+        "urlbtn": "",
+        "paddingsection": "40px 0px 20px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "79040189-d83e-4496-9a40-f7da34834e81": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16472276402307__79040189-d83e-4496-9a40-f7da34834e81-html-1": {
+          "type": "html",
+          "settings": {
+            "width": "50%",
+            "image_sub": "shopify://shop_images/filler-1.jpg",
+            "title": "",
+            "color_title": "#000000",
+            "sub": "",
+            "color_sub": "#000000",
+            "code": "Elevate your wardrobe with the best of the best, carefully curated to ensure you stay ahead in the world of fashion.",
+            "color_des": "#000000",
+            "button_text": "Button text",
+            "link_button": "",
+            "align": "auto",
+            "box_align": "center",
+            "text_align": "center"
+          }
+        },
+        "56401fed-769b-4a35-b12e-dc186a9ae587": {
+          "type": "image",
+          "settings": {
+            "width": "50%",
+            "align": "auto",
+            "image": "shopify://shop_images/filler-2.jpg",
+            "width_image": 100,
+            "image_link": "",
+            "enable_top": true,
+            "code": "<div class=\"subtop mb-3\">Style Redefined</div>\n<h2 class=\"mb-3 h2\">Your Passport to Fashion<br> Elegance</h2>\n Join the ranks of trendsetters who have embraced these must-have pieces. \n<div class=\"mt-3\">\n<a href=\"#\" class=\"btn btn-theme\"> discover now </a> </div>",
+            "padding-left": true,
+            "padding-right": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16472276402307__79040189-d83e-4496-9a40-f7da34834e81-html-1",
+        "56401fed-769b-4a35-b12e-dc186a9ae587"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "padding_custom": 15,
+        "text_color": "rgba(0,0,0,0)",
+        "bgsection": "#ffffff",
+        "rangebg": 0,
+        "bgbefore": "rgba(0,0,0,0)",
+        "e_size": "auto",
+        "e_repeat": "no-repeat",
+        "e_position": "center center",
+        "zindex": "0",
+        "title_top": "",
+        "title": "",
+        "des": "",
+        "align-heading": "left",
+        "padding": true,
+        "col_center": false,
+        "paddingsection": "30px 0px 40px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 40px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "2aff493e-7e2e-4e52-99d2-42c7f1ab7086": {
+      "type": "image-content-6",
+      "blocks": {
+        "template--16472276402307__2aff493e-7e2e-4e52-99d2-42c7f1ab7086-image_block-1": {
+          "type": "image_block",
+          "settings": {
+            "w_image": 40,
+            "pos_image": 50,
+            "e_image": "left",
+            "image": "shopify://shop_images/filler-4.jpg",
+            "enable_video": false,
+            "text_circle": "Fashion2 style store",
+            "video_url": ""
+          }
+        },
+        "template--16472276402307__2aff493e-7e2e-4e52-99d2-42c7f1ab7086-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "bgtext": "#ffffff",
+            "subtitle": "Runway to Your Closet",
+            "title": "Shop the Latest Fashion Directly",
+            "size_text": "h2",
+            "text": "Bring the runway to your everyday style with our latest arrivals. From haute couture to everyday chic, we’ve got the looks that turn heads. Explore the freshest trends and make a statement with our curated collection.",
+            "answer_content": "<p>Step into the realm of timeless elegance and on-trend styles. Our curated collection of chic essentials caters to every wardrobe need. Discover a fusion of classic and contemporary fashion that speaks to your unique style. Unleash the fashionista in you with exclusive discounts on must-have pieces. Elevate your wardrobe today – because every closet deserves a touch of chic.\"</p>",
+            "button": "discover now",
+            "link": "",
+            "align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--16472276402307__2aff493e-7e2e-4e52-99d2-42c7f1ab7086-image_block-1",
+        "template--16472276402307__2aff493e-7e2e-4e52-99d2-42c7f1ab7086-text_block-1"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "size": "50-50",
+        "enable_padding": true,
+        "align_center": true,
+        "paddingsection": "0px 0px 40px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "5300a6f7-45d9-40f5-bf7e-93b86658ef67": {
+      "type": "featured-products",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "",
+        "title": "Top Weekend Sellers",
+        "des": "These fashion favorites have emerged as the must-have picks for weekend wardrobes, capturing the essence of style and comfort",
+        "align-heading": "left",
+        "collection": "jewellery",
+        "enable_creative": false,
+        "padding": true,
+        "colgrid": "col-lg-3",
+        "rows": 4,
+        "txtbutton": "show all",
+        "urlbtn": "",
+        "paddingsection": "60px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "abe3bd6b-755f-408b-92e3-c78faebb6c8b": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16472276402307__abe3bd6b-755f-408b-92e3-c78faebb6c8b-html-1": {
+          "type": "html",
+          "settings": {
+            "width": "100%",
+            "image_sub": "shopify://shop_images/filler-5.jpg",
+            "title": "",
+            "color_title": "#000000",
+            "sub": "",
+            "color_sub": "#000000",
+            "code": "<div class=\"advand-html-title mb-3 section-title-1\" style=\"color:#000000;\">Visit Our Store</div><p>50 Porana Place, West Casuarinas,<br>\nWestern Australia, Australia.\n</p><p>T: + (08) 9055 0269</p>\n<p>E: example@example.com</p>",
+            "color_des": "#000000",
+            "button_text": "",
+            "link_button": "",
+            "align": "auto",
+            "box_align": "center",
+            "text_align": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16472276402307__abe3bd6b-755f-408b-92e3-c78faebb6c8b-html-1"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "padding_custom": 15,
+        "text_color": "rgba(0,0,0,0)",
+        "bgsection": "#ffffff",
+        "rangebg": 0,
+        "bgbefore": "rgba(0,0,0,0)",
+        "e_size": "auto",
+        "e_repeat": "no-repeat",
+        "e_position": "center center",
+        "zindex": "0",
+        "title_top": "",
+        "title": "",
+        "des": "",
+        "align-heading": "center",
+        "padding": true,
+        "col_center": false,
+        "paddingsection": "40px 0px 80px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    }
+  },
+  "order": [
+    "430d67f1-2a0b-4500-81eb-2bd7276f92ad",
+    "07954675-bad5-4a16-8ffa-2392279b713d",
+    "79040189-d83e-4496-9a40-f7da34834e81",
+    "2aff493e-7e2e-4e52-99d2-42c7f1ab7086",
+    "5300a6f7-45d9-40f5-bf7e-93b86658ef67",
+    "abe3bd6b-755f-408b-92e3-c78faebb6c8b"
+  ]
+}
