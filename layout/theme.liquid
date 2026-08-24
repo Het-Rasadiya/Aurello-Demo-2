@@ -59,30 +59,21 @@
         {%- if settings.enable_animationscroll -%}
           <div id="js-scroll">
           {% endif %}
-          {%- if settings.enable_animationscroll -%}
-            <div data-scroll-section>
-            {% endif %}
-            {%- render 'slideshow' -%}
-            {%- if settings.enable_animationscroll -%}
-            </div>
-          {% endif %}
           {{ content_for_layout }}
           {%- if settings.enable_animationscroll -%}
           </div>
         {% endif %}
       </main>
 
-     {%- liquid
-      section 'banner-footer'
-      section 'newsletter-footer'
-      section 'footer'
-      if template == 'index' or request.design_mode
-      section 'pnewsletter'
-      endif
-      section 'product-suggest'
-      section 'cookie-policy'
-      section 'custom-color'
-     -%}
+    {%- section 'banner-footer' -%}
+    {%- section 'newsletter-footer' -%}
+    {%- section 'footer' -%}
+    {%- if template == 'index' or request.design_mode -%}
+      {%- section 'pnewsletter' -%}
+    {%- endif -%}
+    {%- section 'product-suggest' -%}
+    {%- section 'cookie-policy' -%}
+    {%- section 'custom-color' -%}
     </div>
     {%- liquid
       render 'back-to-top' 
